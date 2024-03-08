@@ -1,0 +1,15 @@
+1.	¿Cuál es la diferencia entre la función de "Branch" y la de "Tag" que tienen los sistemas de control de versiones?
+
+Una Branch o rama es una línea independiente de desarrollo que se deriva del código fuente principal y se utiliza para trabajar bien en características, bien en corrección de errores, sin afectar al código en la rama principal.
+Una etiqueta o Tag es un metadato que ayuda a describir un ítem y se puede usar para documentar diferentes aspectos determinados del código, como parámetros. Se usa para marcar momentos evolutivos clave en el desarrollo del software. Además, facilita encontrar fácilmente una versión específica del software más adelante, sin tener que recordar detalles específicos sobre la revisión.
+
+2.	Explica para qué se usa la etiqueta @since. Indica también si hay alguna etiqueta que documente qué excepciones propaga un método.
+
+Etiqueta JavaDoc que guarda la información de la versión en la cual se produjeron cambios en el código asociados a una clase, una interfaz, un método o un campo.
+La etiqueta que documenta las excepciones que propaga un método, es @throws. 
+
+
+3.	Indica las etiquetas obligatorias usadas en la cabecera de una clase.
+
+No existen etiquetas obligatorias en JavaDoc, no obstante, las más utilizadas y las que los entornos de desarrollo añaden de forma automática, son @author y @version.
+
