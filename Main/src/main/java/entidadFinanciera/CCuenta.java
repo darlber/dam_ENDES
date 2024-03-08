@@ -20,6 +20,11 @@ public class CCuenta {
     private double tipoInterés;
     final String ERRORCANTIDADNEGATIVA = "No se puede ingresar una cantidad negativa";
 
+    
+    /**
+     * getters y setters
+     * 
+     */
     public String getNombre() {
         return nombre;
     }
@@ -53,10 +58,17 @@ public class CCuenta {
     }
     
     
+    
     public CCuenta()
     {
     }
 
+    /**
+     * 
+     * @param nom recibe el String nombre
+     * @param cue recibe el String del nombre de la cuenta
+     * @param sal recibe el double para el saldo
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -64,10 +76,19 @@ public class CCuenta {
         saldo=sal;
     }
     
+    /**
+     * metodo que devuelve el estado actual de la cuenta
+     * @return el saldo
+     */
     public double estado(){
         return this.saldo;
     }
 
+    /**
+     * Ingresa una cantidad en la cuenta
+     * @param cantidad double que almacena la cantidad a ingresar
+     * @throws Exception en caso de que se ingrese una cantidad negatica
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -75,6 +96,11 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
+    /**
+     * Retira una cantidad de la cuenta
+     * @param cantidad double que almacena la cantidad a ingresar
+     * @throws Exception en caso de que se ingrese una cantidad negativa
+     */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)

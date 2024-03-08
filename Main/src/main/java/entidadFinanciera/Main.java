@@ -8,7 +8,10 @@ package entidadFinanciera;
  * @author Alberto
  */
 public class Main {
-
+/**
+ * metodo main donde se inicia el proyecto
+ * @param args 
+ */
     public static void main(String[] args) {
         CCuenta objetoCuenta;
         double saldoActual;
@@ -30,10 +33,22 @@ public class Main {
         }
     }
 
+    /**
+     * Metodo que intenta ingresar la cantidad deseada. Extraida con la opcion de refactorizacion
+     * @param objetoCuenta 
+     * @param cantidadEsperada
+     * @throws Exception en caso de error
+     */
     private static void probarIngresar(CCuenta objetoCuenta, double cantidadEsperada) throws Exception {
         objetoCuenta.ingresar(695);
     }
 
+    /**
+     * metodo que intenta retirar la cantidad deseada. Extraida con la opcion de refactorizacion
+     * @param objetoCuenta
+     * @param cantidadEsperada
+     * @throws Exception en caso de error
+     */
     private static void probarRetirar(CCuenta objetoCuenta, double cantidadEsperada) throws Exception {
         objetoCuenta.retirar(2300);
     }
